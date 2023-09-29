@@ -49,7 +49,9 @@ Contem todas as dependencias do projeto laravel
         desfaz o migration
         php artisan make:migration create_produtos_table
         cria o migration para tabela de produtos, com a estrutura pronta para receber os campos
-        
+
+
+        Parei na aula 20
    
 
     
