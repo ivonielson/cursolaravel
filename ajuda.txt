@@ -1,0 +1,58 @@
+#Arquivo .env
+Contem todas as informações senciveis do sistema
+Ex: conexão com banco de dados e outros
+artisan
+Usado no terminal para execução de tarefas como por ex:
+#php artisan serve
+execulta servidor para visualizar a aplicação
+#composer.json
+Contem todas as dependencias do projeto laravel
+
+#Pastas
+
+    app
+    Armazena toda parte logica do código como as classes 
+
+    bootstrap
+    Armazena todos os arquivos de inicialização do framework
+    Normalmente, não precisará modificar nenhum arquivo neste diretório
+    
+    config
+    Arquivos de configuração do framework
+
+    databases
+    Arquivos de definição do banco de dados
+
+    public
+    Usados para todos os arquivos publicos
+    como img, css, js
+
+    resources
+    Fica os arquivos visuais da aplicação
+    como as views bem como seus ativos brutos e não compilados, como CSS ou JavaScript.
+
+    routes
+    Arquivos de rotas
+    Por padrão, vários arquivos de rota estão incluídos no Laravel: web.php, api.php, console.phpe channels.php.
+    
+    storage
+    O storagediretório contém seus logs, modelos Blade compilados, sessões baseadas em arquivos, caches de arquivos
+
+    vendor
+    Armazena tudo que e gerenciado pelo composer, todas as dependencias baixadas e gerenciadas pelo composer
+
+    
+    #comandos artisan
+        php artisan migration
+        execulta todas a migrates prontas criando a estrutura de tabelas no banco de dados
+        php artisan migration:rollback
+        desfaz o migration
+        php artisan make:migration create_produtos_table
+        cria o migration para tabela de produtos, com a estrutura pronta para receber os campos
+        
+   
+
+    
+
+
+
