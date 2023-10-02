@@ -2,17 +2,18 @@
 
 //use Illuminate\Routing\Route as RoutingRoute;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\ProdutoController;
+use App\Http\Controllers\ProdutoController; //>>Temos que informar o uso do controle
 use App\Http\Controllers\ClienteController;
 
 //Rota com controle
-Route::get('/',[ProdutoController::class, 'index'])->name('produto.index');
-
-//
-Route::resource('clientes',ClienteController::class);
+Route::get('/produto',[ProdutoController::class, 'index'])->name('produto.index');
+//ProdutoController = controler
+//Para criar o controle: php artisan make:controler ProdutoController;
+//index = metodo a ser criado no ProdutoController
 //Rota com controle e paramentro
 Route::get('/produto/{id?}',[ProdutoController::class, 'show'])->name('produto.show');
-
+//
+Route::resource('clientes',ClienteController::class);
 
 
 //Rota padrão para a view welcome do laravel
@@ -33,7 +34,7 @@ Route::get('/produto/{id?}',[ProdutoController::class, 'show'])->name('produto.s
 //     return "Permite todo tipo de acesso http (put, delete, get, post";
 // });
 
-// //Permite apenas requisição definida
+//Permite apenas requisição definida
 // Route::match(['put','delete'], '/match', function(){
 //     return "Permite apenas acessos definidos";
 // });
@@ -47,13 +48,13 @@ Route::get('/produto/{id?}',[ProdutoController::class, 'show'])->name('produto.s
 // Route::redirect('/sobre', '/empresa');
 
 // //Redirecionamento de rota por nome
-// Route::get('/news',function(){
-//     return view('/site/news');
-// })->name('noticias');
+//  Route::get('/news',function(){
+//      return view('/site/news');
+//  })->name('noticias');
 
-// Route::get('/novidades',function(){
-//     return redirect()->route('noticias');
-// });
+//  Route::get('/novidades',function(){
+//      return redirect()->route('noticias');
+//  });
 
 // //Grupo de rotas por prefixo
 // Route::prefix('admin')->group(function(){

@@ -43,15 +43,30 @@ Contem todas as dependencias do projeto laravel
 
     
     #comandos artisan
-        php artisan migration
+        >> php artisan migration
         execulta todas a migrates prontas criando a estrutura de tabelas no banco de dados
-        php artisan migration:rollback
+
+        >> php artisan migration:rollback
         desfaz o migration
-        php artisan make:migration create_produtos_table
+
+        >> php artisan migration:status
+        Verifica o status do ultimo migrates
+
+        >> php artisan migrate:fresh
+        Apaga e recria todas as tabelas das migrates
+        
+        >> php artisan make:migration create_produtos_table
+        cria o migration para tabela de produtos, com a estrutura pronta para receber os campos
+        
+        >> php artisan make:migration produtos --create=produtos >> Segunda forma de criar migrates
         cria o migration para tabela de produtos, com a estrutura pronta para receber os campos
 
+    #Controllers
+    Resposanvel por toda lógica e regras de negócio
+    php artisan make:controler NomedoControler --resource
+    Com o comando acima criaremos um controle com todos os metodos necessarios
 
-        Parei na aula 20
+
    
 
     

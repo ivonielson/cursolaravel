@@ -35,7 +35,7 @@ class ClienteController extends Controller
      */
     public function show(string $id)
     {
-        //
+        return "index clientes show:".$id;
     }
 
     /**

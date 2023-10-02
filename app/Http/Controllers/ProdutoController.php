@@ -8,10 +8,10 @@ use Illuminate\Http\Request;
 class ProdutoController extends Controller
 {
     public function index() {
-        return "index";
+        return "index produto";
     }
 
     public function show($id = 0) {
-        return "show:".$id;
+        return "show produto:".$id;
     }
 }
