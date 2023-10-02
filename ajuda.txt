@@ -43,6 +43,9 @@ Contem todas as dependencias do projeto laravel
 
     
     #comandos artisan
+    IMPORTANTE
+    Os migrates são execultados em uma ordem, de acordo com a data e hora de criação no mesmo, então se temos uma tabela com relacionamento
+    temos que se atentar que a tabela master seja criada ´primeiro
         >> php artisan migration
         execulta todas a migrates prontas criando a estrutura de tabelas no banco de dados
 
@@ -54,7 +57,7 @@ Contem todas as dependencias do projeto laravel
 
         >> php artisan migrate:fresh
         Apaga e recria todas as tabelas das migrates
-        
+
         >> php artisan make:migration create_produtos_table
         cria o migration para tabela de produtos, com a estrutura pronta para receber os campos
         
@@ -63,8 +66,26 @@ Contem todas as dependencias do projeto laravel
 
     #Controllers
     Resposanvel por toda lógica e regras de negócio
-    php artisan make:controler NomedoControler --resource
+    >> php artisan make:controler ProdutoController --resource
     Com o comando acima criaremos um controle com todos os metodos necessarios
+
+    >> php artisan make:controler -mcr
+    Cria o Controller o model e o migrate em uma unica linha de codigo
+
+    #modelos
+    Representação de entidades de um banco de dados
+    EX: Produto, Cliente, Categoria
+
+    >> php artisan make:model Produto
+    Criar um model
+
+    #seeder
+    recurso do laravel para popular tabela no banco de dados
+
+    php artisan make:seeder UserSeeder
+    Cria o seeder
+
+
 
 
    
