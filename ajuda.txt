@@ -88,7 +88,7 @@ Contem todas as dependencias do projeto laravel
     php artisan db:seed 
     execulta o seed para popula o banco
     
-parei na aula 26
+parei na aula 26  
 
 
    
