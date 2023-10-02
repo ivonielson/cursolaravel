@@ -85,7 +85,10 @@ Contem todas as dependencias do projeto laravel
     php artisan make:seeder UserSeeder
     Cria o seeder
 
-
+    php artisan db:seed 
+    execulta o seed para popula o banco
+    
+parei na aula 26
 
 
    

@@ -7,6 +7,7 @@ use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Str;
+use App\Models\User;
 
 class DatabaseSeeder extends Seeder
 {
@@ -21,9 +22,10 @@ class DatabaseSeeder extends Seeder
         //     'name' => 'Test User',
         //     'email' => 'test@example.com',
         // ]);
-        $this->call([
-            UsersSeeder::class,
-        ]);
+        //aqui podemos usar a seed com os dados predefinidos
+        // $this->call([
+        //     UsersSeeder::class,
+        // ]);
 
         //      DB::table('users')->insert([
         //     'firstName' => Str::random(10),
@@ -31,6 +33,9 @@ class DatabaseSeeder extends Seeder
         //     'email' => Str::random(10).'@gmail.com',
         //     'password' => Hash::make('password'),
         // ]);
+       
+//popula a tabela com dados fake
+User::factory()->count(10000)->create();
         
     }
 }
