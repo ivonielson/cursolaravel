@@ -11,5 +11,5 @@ class Produto extends Model
 
     //caso o laravel nao consiga pluralizar e localizar a tabela
     //coloque aqui o nome da tabela
-    protected $table = 'produtos';
+   // protected $table = 'produtos';
 }

@@ -35,7 +35,10 @@ class DatabaseSeeder extends Seeder
         // ]);
        
 //popula a tabela com dados fake
-User::factory()->count(10000)->create();
-        
+//User::factory()->count(10000)->create();
+   //Chamando a seeder categoria         
+  // $this->call(CategoriasSeeder::class);    
+     //Chamando a seeder produto         
+   $this->call(ProdutosSeeder::class);   
     }
 }
