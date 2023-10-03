@@ -87,15 +87,10 @@ Contem todas as dependencias do projeto laravel
 
     php artisan db:seed 
     execulta o seed para popula o banco
-<<<<<<< HEAD
 
     #Usando o factory para gerar dados fake
     php artisan make:factory CategoriaFactory
     cria o arquivo de configuração do factory
-=======
-    
-parei na aula 26  
->>>>>>> 6c938e45b6795e13fce404ecfc5fe6116f218888
 
 
 
